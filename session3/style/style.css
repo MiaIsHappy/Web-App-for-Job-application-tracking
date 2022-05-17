@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(231 225 214);
+    font-family:"Roboto",sans-serif;
+}
+header{
+    text-align: center;
+    border-bottom:  dotted darkslateblue 2px;
+    padding-bottom: 5px;
+}
+
+h1{
+    color: #1050aa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.2em;
+
+}
+
+#job-title{
+    font-weight: bold;
+}
+
+.experience 
+.education {
+    border: 2px dashed chocolate;
+    margin: 10,0,10,0;
+}
