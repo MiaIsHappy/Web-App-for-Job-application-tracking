@@ -1,0 +1,25 @@
+extends layout
+
+block content
+
+  h1 Producer: #{producer.producer_name}
+  p #{producer.address}
+  
+  div(style='margin-left:20px;margin-top:20px')
+
+    h4 Items
+    
+    dl
+    each item in producer_items
+      dt 
+        a(href=item.url) #{item.title}
+      dd #{item.summary}
+
+    else
+      p This producer has no items.
+      
+  hr
+  p
+    a(href=producer.url+'/delete') Delete author
+  p
+    a(href=producer.url+'/update') Update producer

@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1= "Home"
+  p This is Assignment 2, a practice of Grocery_List DB to illustrate express JS.
+
+  h1 Dynamic Content Overview
+  
+  img(src='grc.jpeg')
+
+
+  if error
+    p Error getting dynamic content.
+  else
+
+    p The DB has the following record counts:
+
+    ul
+      li #[strong Items:] !{data.item_count}
+      li #[strong Category:] !{data.cat_count}
