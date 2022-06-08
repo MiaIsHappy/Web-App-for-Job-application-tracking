@@ -16,7 +16,7 @@ var app = express();
 
 // Set up mongoose connection
 var mongoose = require('mongoose');
-var dev_db_url = 'mongodb+srv://mia0303:199127@cluster0.69q8jdz.mongodb.net/?retryWrites=true&w=majority';
+var dev_db_url = 'mongodb+srv://'+process.env.USER_ID+':'+process.env.PASSWORD+'199127@cluster0.69q8jdz.mongodb.net/?retryWrites=true&w=majority';
 
 //var dev_db_url = 'mongodb+srv://cooluser:coolpassword@cluster0.a9azn.mongodb.net/local_library?retryWrites=true';
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
