@@ -1,3 +1,32 @@
+/* automatic/manual light mode */
+:root, :root.light {
+  --some-value: black;
+  --some-other-value: white;
+}
+
+/* automatic dark mode */
+/* ❗️ keep the rules in sync with the manual dark mode below! */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --some-value: white;
+    --some-other-value: black;
+  }
+}
+
+/* manual dark mode 
+/* ❗️ keep the rules in sync with the automatic dark mode above! */
+:root.dark {
+  --some-value: white;
+  --some-other-value: black;
+}
+
+/* use the variables */
+body {
+  color: var(--some-value);
+  background-color: var(--some-other-value);
+}
+<
+
 body{
    
     font-family: 'Roboto', sans-serif;
@@ -8,12 +37,21 @@ header{
     text-align: left;
     list-style-type: none;
     background-color: rgb(15, 188, 198);
+    padding: 0px;
+    z-index: 100;
 }
 
 h1{
     color:#1050aa;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.2em;
+    padding: 0px;
+     z-index: 100;
+}
+
+.mystyle {
+  background-color: black;
+  color: white;
 }
 
 
@@ -70,15 +108,12 @@ ul {
     overflow: hidden;
   }
   
-  li {
-    
-  }
   
   li a {
     display: block;
     color: rgb(101, 8, 8);
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 10px;
     text-decoration: none;
     float: left;
   }
@@ -125,4 +160,64 @@ ul {
               border-radius: 5px;
               background-color: #f2f2f2;
               padding: 20px;
+              width: 60%;
+              margin:0 auto;
+
             }
+
+
+            * {padding: 0; margin: 0;}
+
+            .flex-container  {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+                  background: deepskyblue;
+                  position: fixed;
+  width: 100%;
+                  
+                  
+            }
+
+            
+            .logo {
+              margin: 0 0 0 .45em;
+            }
+                .logo a {
+                  color: rgb(28, 24, 22);
+                }
+            
+                .logo, .navigation {
+                    list-style: none;
+                    text-transform: uppercase;
+                }
+            
+                .logo a, .navigation a {
+                    text-decoration: none;
+                    letter-spacing: .45rem;
+                }
+            
+            .navigation  {
+              display: flex;
+  
+            }
+            
+            .navigation a {
+              display: block;
+              padding: 1em;
+              color: white;
+
+            }
+            
+            .navigation a:hover {
+                background: #ade6f9;
+            }
+            
+
+            a:active {
+              color: blue;
+          }
+          a:visited {
+              color:grey;
+          }
+           

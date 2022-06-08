@@ -9,30 +9,60 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
-    />
-    <link rel="stylesheet" href="sty.css" />
+    /> 
+    <link rel="stylesheet" href="CSS/sty_c.css" />
     <link rel="icon" type="image/x-icon" href="img/favi.ico">
+
   </head>
 
   
   <body>
     <header>
-        <a href="https://www.northeastern.edu/" id="logo">
+        <!-- <a href="https://www.northeastern.edu/" id="logo">
             <img src="img/nee.png" alt="clean Blog" width="390" height = "65">
-        </a>
-        <ul>
+        </a> -->
+        <!-- 
+          <ul> -->
+           <!-- 
             <li><a href="index.html">Home</a></li>
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li style="float:right"><a class="active" href="about.html">Random</a></li>
-        </ul>
+            -->
+            <div class="flex-container">
+              <h1 class="logo"><a href="https://www.northeastern.edu/"> <img src="img/nee.png" alt="Northeastern University Logo" width="390" height = "65"/></a></h1>
+            </a>
+              <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">Random</a></li>
+              </ul>
+            </div>
+         <!-- </ul> -->  
     </header>
 
     <main>
-        <h3>Random</h3>
-
-        <iframe src="https://heeeeeeeey.com/"  width="1200" height="800"></iframe>
+        <h3 style="text-align:center;">Random</h3>
+        <div style="text-align:center">
+        <iframe src="https://heeeeeeeey.com/"  width="1500" height="800" ></iframe>
+        </div>
+        <fieldset style="text-align:center">
+          <legend>Select an option:</legend>
       
+          <div>
+            <input type="radio" id="date" name="x" value="huey"
+                   >
+            <label for="date">Date</label>
+          </div>
+      
+          <div>
+            <input type="radio" id="time" name="x" value="dewey" >
+            <label for="time">Time</label>
+          </div>    
+      </fieldset>
+
+      <p style="text-align:center" id="radius">The answer is &nbsp;</p>
 
     </main>
     <p class="cp-text">
