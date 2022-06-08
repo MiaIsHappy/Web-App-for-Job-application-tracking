@@ -1,6 +1,3 @@
-This work is based on the tutorial and code provided in the "Local Library" (https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Tutorial_local_library_website) work and this repo (https://github.com/mdn/express-locallibrary-tutorial)
-But this project will serve a different purpose about grocery list and have a different data model. 
-
 Purpose of this work: Record and display a grocery shopping list with an easy-to-use web portal and backend database. 
 
 Data Model: 
@@ -29,4 +26,7 @@ Setup - Local
 
 Note: this is the MongoDB cloud database auth string, plz replace with your own auth string if necessary. 
          mongodb+srv://mia0303:199127@cluster0.69q8jdz.mongodb.net/?retryWrites=true&w=majority
+
+This work is built upon the tutorial and code provided in the "Local Library" (https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Tutorial_local_library_website) work and this repo (https://github.com/mdn/express-locallibrary-tutorial)
+But this project will serve a different purpose about grocery list and have a different data model.
         
