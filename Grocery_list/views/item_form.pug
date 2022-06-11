@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  h1= title
+
+  form(method='POST' action='')
+    div.form-group
+      label(for='title') Title:
+      input#title.form-control(type='text', placeholder='Name of Item' name='title' required='true' value=(undefined===item ? '' : item.title) )
+    
+    div.form-group
+      label(for='summary') Summary:
+      input#summary.form-control(type='textarea', placeholder='Summary' name='summary' value=(undefined===item ? '' : item.summary) required='true')
+    div.form-group
+      label(for='SKU') SKU:
+      input#isbn.form-control(type='text', placeholder='SKU' name='SKU' value=(undefined===item ? '' : item.SKU) required='true') 
+    div.form-group
+      label Cat:
+      div
+        for cat in cats
+          div(style='display: inline; padding-right:10px;')
+            input.checkbox-input(type='checkbox', name='cat', id=cat._id, value=cat._id, checked=cat.checked )
+            label(for=cat._id) #{cat.name}
+    button.btn.btn-primary(type='submit') Submit
+
+  if errors 
+    ul
+      for error in errors
+        li!= error.msg
